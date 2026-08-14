@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwa Sip & Bite - Order Now</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kwa Sip & Bite</h1>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="menu.html">Menu</a> |
+            <a href="gallery.html">Gallery</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="order.html">Order Now</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Place Your Order</h2>
+
+        <form>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname">
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <br><br>
+
+            <label for="order">Select Your Meal:</label>
+
+            <select id="order" name="order">
+                <option value="junk food">Junk Food</option>
+                <option value="platters">Platters</option>
+                <option value="burgers">Burgers</option>
+                <option value="seafood">Seafood</option>
+                <option value="combos">Combos</option>
+                <option value="daily specials">Daily Specials</option>
+                <option value="non-alcoholic drinks">Non-Alcoholic Drinks</option>
+                <option value="alcoholic drinks">Alcoholic Drinks</option>
+            </select>
+
+            <br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1">
+
+            <br><br>
+
+            <label for="instructions">Special Instructions:</label>
+            <br>
+
+            <textarea id="instructions" name="instructions"
+                      rows="5" cols="30"></textarea>
+
+            <br><br>
+
+            <button type="submit">Submit Order</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kwa Sip & Bite. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
