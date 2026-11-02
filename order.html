@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwa Sip & Bite - Order Now</title>
+
+
+   <meta name="description" content="Explore the Kwa Sip & Bite menu and complete our online order form to provide your meal preferences.">
+   <meta name="keywords" content="Kwa Sip & Bite orders, food order form, restaurant menu, meal preferences">
     <link rel="stylesheet"href="style.css">
 </head>
 
@@ -26,30 +30,58 @@
 
         <h2>Place Your Order</h2>
 
-        <form>
+        <form id="orderForm">
 
             <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname">
+            <input type="text" id="fullname" name="fullname" required>
 
             <br><br>
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone">
+            <input type="tel" id="phone" name="phone" required>
 
             <br><br>
 
             <label for="order">Select Your Meal:</label>
 
-            <select id="order" name="order">
-                <option value="junk food">Junk Food</option>
-                <option value="platters">Platters</option>
-                <option value="burgers">Burgers</option>
-                <option value="seafood">Seafood</option>
-                <option value="combos">Combos</option>
-                <option value="daily specials">Daily Specials</option>
-                <option value="non-alcoholic drinks">Non-Alcoholic Drinks</option>
-                <option value="alcoholic drinks">Alcoholic Drinks</option>
-            </select>
+            <select id="order" name="order" required>
+    <option value="">Select a meal</option>
+
+    <optgroup label="Burgers">
+        <option value="beefBurger">Beef Burger - R65</option>
+        <option value="bbqBaconBurger">BBQ Bacon Burger - R85</option>
+    </optgroup>
+
+    <optgroup label="Seafood">
+        <option value="seafoodBoil">Seafood Boil (Sundays Only) - R190</option>
+    </optgroup>
+
+    <optgroup label="Specialty Drinks - Non-Alcoholic">
+        <option value="icedLatte">Iced Latte - R30</option>
+        <option value="blueberryMocktail">Blueberry Mocktail - R40</option>
+        <option value="passionMocktail">Passion Fruit & Lemon Mocktail - R40</option>
+        <option value="oreoFrappe">Oreo Frappe - R45</option>
+    </optgroup>
+
+    <optgroup label="Specialty Drinks - Alcoholic">
+        <option value="amarulaLatte">Amarula Latte - R60</option>
+        <option value="passionLemonade">Passion Fruit & Lemonade - R60</option>
+        <option value="ginTonic">Gin and Tonic - R55</option>
+        <option value="blueLagoon">Blue Lagoon - R65</option>
+    </optgroup>
+
+    <optgroup label="Junk Food">
+        <option value="loadedFries">Loaded Fries - R50</option>
+        <option value="dagwoodFries">Dagwood x Fries - R65</option>
+        <option value="taco">Taco - R70</option>
+        <option value="chipotleBurrito">Chipotle Burrito - R120</option>
+    </optgroup>
+
+    <optgroup label="Combos">
+        <option value="burritoCombo">Burrito x Wings x Fries - R120</option>
+        <option value="dagwoodCombo">Dagwood x Tacos x Wings - R170</option>
+    </optgroup>
+</select>
 
             <br><br>
 
@@ -67,6 +99,8 @@
             <br><br>
 
             <button type="submit">Submit Order</button>
+            <div id="orderSummary"
+            aria-live="polite"></div>
 
         </form>
 
@@ -75,6 +109,7 @@
     <footer>
         <p>&copy; 2026 Kwa Sip & Bite. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>

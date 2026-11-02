@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwa Sip & Bite - Menu</title>
+
+
+    <meta name="description" content="Explore the Kwa Sip & Bite menu, featuring burgers, platters, seafood, daily specials and refreshing drinks.">
+    <meta name="keywords" content="Kwa Sip & Bite menu, burgers, platters, seafood, food specials, drinks">
     <link rel="stylesheet"href="style.css">
 </head>
 
@@ -28,6 +32,37 @@
         <h2>Our Menu</h2>
 
         <p>Delicious food and refreshing drinks made for every occasion.</p>
+        <!-- Menu Search and Sorting -->
+<section class="menu-controls">
+    <label for="menuSearch">Search for food or drinks:</label>
+    <input
+        type="search"
+        id="menuSearch"
+        placeholder="Search burgers, fries, drinks..."
+    >
+
+    <label for="categoryFilter">Filter by category:</label>
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Junk Food">Junk Food</option>
+        <option value="Combos">Combos</option>
+        <option value="Daily Specials">Daily Specials</option>
+        <option value="Platters">Platters</option>
+        <option value="Burgers">Burgers</option>
+        <option value="Seafood">Seafood</option>
+        <option value="Non-Alcoholic Drinks">Non-Alcoholic Drinks</option>
+        <option value="Alcoholic Drinks">Alcoholic Drinks</option>
+    </select>
+
+    <label for="priceSort">Sort by price:</label>
+    <select id="priceSort">
+        <option value="default">Default order</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+    </select>
+
+    <p id="menuMessage" aria-live="polite"></p>
+</section>
 
 
         <!-- JUNK FOOD -->
@@ -131,6 +166,7 @@
     <footer>
         <p>&copy; 2026 Kwa Sip & Bite. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 
